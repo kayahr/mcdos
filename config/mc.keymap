@@ -1,0 +1,71 @@
+[editor]
+
+# File menu
+EditFile = ctrl-e # ctrl-o for leaving shell can't be changed, so we keep ctrl-o for entering shell
+EditNew = ctrl-n
+Close = ctrl-w
+History = ctrl-alt-e
+Save = ctrl-s; f2; f12
+SaveAs = ctrl-alt-s
+InsertFile = ctrl-i
+BlockSave = ctrl-t
+UserMenu = f1
+Quit = ctrl-q; f10; f20
+
+# Edit menu
+Undo = ctrl-z
+Redo = ctrl-y
+Mark = alt-m; f13
+MarkColumn = alt-shift-m
+MarkAll = ctrl-a
+Unmark = escape
+Store = ctrl-c; ctrl-insert
+Cut = ctrl-x; shift-delete
+Paste = ctrl-v; shift-insert
+Remove = delete; f8; f18
+Top = ctrl-home
+Bottom = ctrl-end
+
+# Search menu
+Search = ctrl-f; f7; f17
+SearchContinue = f3
+Replace = ctrl-r; ctrl-h; f4; f14 # ctrl-h is not mappable
+Bookmark = ctrl-alt-k
+BookmarkNext = ctrl-alt-l
+BookmarkPrev = ctrl-alt-j
+BookmarkFlush  = ctrl-alt-i
+
+# Command menu
+Goto = alt-g; ctrl-g # ctrl-g is not mappable
+ShowNumbers = alt-n
+MatchBracket = ctrl-backslash; shift-ctrl-backslash
+SyntaxOnOff = alt-h
+MacroStartStopRecord = alt-r
+
+
+
+# Rest of the button bar commands not remapped above already
+Help = f11
+Copy = f5; f15
+Move = f6; f16
+Menu = f9; f19
+
+
+DeleteLine = ctrl-d
+Delete = del
+WordLeft = ctrl-left
+WordRight = ctrl-right
+EditMoveUp = alt-up
+EditMove   = alt-down
+Tab = tab
+BlockShiftRight = tab
+BlockShiftLeft = shift-tab
+SelectCodepage =
+WindowNext = ctrl-tab
+InsertLiteral = alt-i
+
+[help]
+Help = f1; f11
+Index = f2; f12; c
+Back = f3; f13; left; l
+Quit = f10; f20; esc

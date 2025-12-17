@@ -1,0 +1,23 @@
+[Misc]
+clipboard_store=xclip -i -selection clipboard
+clipboard_paste=xclip -o -selection clipboard
+
+[terminal:linux]
+backtab=\\e^i
+
+[Midnight-Commander]
+auto_save_setup=false
+editor_tab_spacing=4
+editor_fill_tabs_with_spaces=true
+editor_cursor_after_inserted_block=true
+editor_drop_selection_on_copy=false
+editor_edit_confirm_save=false
+editor_syntax_highlighting=true
+editor_fake_half_tabs=false
+editor_persistent_selections=false
+old_esc_mode_timeout=0
+editor_return_does_auto_indent=1
+editor_group_undo=1
+skin=mcdos256
+use_internal_view=true
+use_internal_edit=true
