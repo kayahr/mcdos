@@ -14,7 +14,7 @@ Goals of this project are:
 
 ## Installation
 
-* Copy the content of `config/` to `$HOME/.config/`. This might override your current configuration, so make a backup if necessary.
+* Copy the content of `config/mc/` to `$HOME/.config/mc/`. This might override your current configuration, so make a backup if necessary.
 * Create `~/.local/config/mc/skins/` if not already present.
 * Copy the content of `skins/` to `~/local/config/mc/skins/`.
 
