@@ -33,7 +33,7 @@ fi
 export EDITOR=mcedit
 ```
 
-The TERM check ensures that on a linux terminal (TTY) the 16 `mcdos` skin is used instead of `mcdos256`.
+The TERM check ensures that on a linux terminal (TTY) the standard 16 color `mcdos` skin is used instead of `mcdos256`.
 
 
 ## Skins
