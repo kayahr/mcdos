@@ -26,6 +26,16 @@ If you want clipboard support then you must install the `xclip` program. On Debi
 
 How you configure your system to use mcedit, is up to you. I would recommend setting an `EDITOR=mcedit` environment variable in `~/.profile` and maybe setting an alias like `alias edit=mcedit` in `~/.bashrc`.
 
+## Skins
+
+The following skin variations are provided:
+
+Skin        | Description
+------------|---------------------------------------------------------------------------------------------------------------------
+mcdos256    | Uses fixed colors of the 256-color palette to be as close to the MS-DOS Editor colors as possible.
+mcdos       | Uses the standard color names which are influenced by the terminal settings. Use this if 256-color palette does not work for you or you like the standard color palette of your terminal.
+
+
 ## Hotkeys
 
 The hotkey listings here are not complete lists. They primarily document the hotkeys which are different to the default key mapping of mcedit.
