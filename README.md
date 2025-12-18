@@ -59,12 +59,12 @@ Ctrl+Right | WordTop         | Move cursor one word to the right
 
 Hotkey     | Menu           | Command    | Notes
 -----------|----------------|------------|------------------
-Ctrl+E     | Open File      | EditFile   | Returning from the subshell is hardcoded to Ctrl-O, so we can't use Ctrl+O here and keep Ctrl-O has hotkey to enter the subshell. Using Ctrl-E because the command is named **EditFile** anyway.
+Ctrl+E     | Open File      | EditFile   | Returning from the subshell is hardcoded to Ctrl+O, so we can't use Ctrl+O here and keep it to enter the subshell. Using Ctrl+E because the command is named **EditFile** anyway.
 Ctrl+N     | New File       | EditNew    |
 Ctrl+W     | Close File     | Close      |
-Ctrl+Alt+E | History        | History    | Opens/Edits a a *recent* file, so an alternate version of Ctrl-E
+Ctrl+Alt+E | History        | History    | Opens/Edits a a *recent* file, so an alternate version of Ctrl+E
 Ctrl+S     | Save File      | Save       |
-Ctrl+Alt+S | Save File As   | SaveAs     | Ctrl-Shift-S is not mappable unfortunately
+Ctrl+Alt+S | Save File As   | SaveAs     | Ctrl+Shift+S is not mappable unfortunately
 Ctrl+I     | Insert File    | InsertFile |
 Ctrl+T     | Copy To File   | BlockSave  | T for copy "To" file
 F12        | User Menu      | UserMenu   |
@@ -79,7 +79,7 @@ Ctrl+Y      | Redo                 | Redo            |
 Insert      | Toggle ins/overwrite | InsertOverwrite |
 F3          | Toggle Mark          | Mark            | Fixed mapping in button bar
 Alt+Shift+M | Mark Columns         | MarkColumn      |
-Ctrl+a      | Mark All             | MarkAll         |
+Ctrl+A      | Mark All             | MarkAll         |
 Escape      | Unmark               | Unmark          |
 Delete      | Delete               | Delete          |
 Ctrl+C      | Copy to clipfile     | Store           |
@@ -117,7 +117,7 @@ Alt+R       | Start/Stop record macro    | MacroStartStopRecord |
 
 Hotkey      | Menu                       | Command              | Notes
 ------------|----------------------------|----------------------|-----------------------------------------------------
-Ctrl+U      | Insert Literal             | InsertLiteral        | Related to Ctrl-Shift-U which is handled by Terminal
+Ctrl+U      | Insert Literal             | InsertLiteral        | Related to Ctrl+Shift+U which is handled by Terminal
 Alt+P       | Format Paragraph           | ParagraphFormat      |
 Alt+T       | Sort                       | Sort                 |
 Alt+U       | Paste output of            | ExternalCommand      |
