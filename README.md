@@ -10,7 +10,7 @@ Goals of this project are:
 * Support copy/paste between X11/Wayland and mcedit.
 * Work in GUI terminal like Gnome Terminal but also on TTY and over SSH.
 
-![image](images/mcedit.png)
+![image](images/mcdos.png)
 
 ## Installation
 
