@@ -1,7 +1,7 @@
 
 # mcdos
 
-This project contains the config and skin for configuring [Midnight Commander] and especially mcedit to look more like the old [MS-DOS Editor] and behave more like modern GUI text editors like [Visual Studio Code].
+This project contains the config and skin for configuring [Midnight Commander]'s internal editor (mcedit) to look more like the old [MS-DOS Editor] and behave more like modern GUI text editors like [Visual Studio Code].
 
 Goals of this project are:
 
