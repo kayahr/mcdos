@@ -24,7 +24,17 @@ If you only wan't to use the configuration and keep the default skin of Midnight
 
 If you want clipboard support then you must install the `xclip` program. On Debian systems this program is provided by the `xclip` package which can be installed with `sudo apt install xclip`.
 
-How you configure your system to use mcedit, is up to you. I would recommend setting an `EDITOR=mcedit` environment variable in `~/.profile` and maybe setting an alias like `alias edit=mcedit` in `~/.bashrc`.
+How you configure your system to use mcedit, is up to you. I would recommend setting this in your `~/.profile` file:
+
+```sh
+if [ "${TERM-}" = "linux" ]; then
+    export MC_SKIN="mcdos"
+fi
+export EDITOR=mcedit
+```
+
+The TERM check ensures that on a linux terminal (TTY) the 16 `mcdos` skin is used instead of `mcdos256`.
+
 
 ## Skins
 
@@ -53,6 +63,8 @@ Shift+Tab  | BlockShiftLeft  | Unindents marked lines
 Ctrl+D     | DeleteLine      | Delete current line
 Ctrl+Left  | WordLeft        | Move cursor one word to the left
 Ctrl+Right | WordTop         | Move cursor one word to the right
+Ctrl+Home  | Top             | Move cursor to top of the file
+Ctrl+End   | Bottom          | Move cursor to bottom of the file
 
 
 ### File menu hotkeys
@@ -62,7 +74,7 @@ Hotkey     | Menu           | Command    | Notes
 Ctrl+E     | Open File      | EditFile   | Returning from the subshell is hardcoded to Ctrl+O, so we can't use Ctrl+O here and keep it to enter the subshell. Using Ctrl+E because the command is named **EditFile** anyway.
 Ctrl+N     | New File       | EditNew    |
 Ctrl+W     | Close File     | Close      |
-Ctrl+Alt+E | History        | History    | Opens/Edits a a *recent* file, so an alternate version of Ctrl+E
+Ctrl+Alt+E | History        | History    | Opens/Edits a *recent* file, so it is an alternate version of Ctrl+E
 Ctrl+S     | Save File      | Save       |
 Ctrl+Alt+S | Save File As   | SaveAs     | Ctrl+Shift+S is not mappable unfortunately
 Ctrl+I     | Insert File    | InsertFile |
@@ -78,7 +90,6 @@ Ctrl+Z      | Undo                 | Undo            |
 Ctrl+Y      | Redo                 | Redo            |
 Insert      | Toggle ins/overwrite | InsertOverwrite |
 F3          | Toggle Mark          | Mark            | Fixed mapping in button bar
-Alt+Shift+M | Mark Columns         | MarkColumn      |
 Ctrl+A      | Mark All             | MarkAll         |
 Escape      | Unmark               | Unmark          |
 Delete      | Delete               | Delete          |

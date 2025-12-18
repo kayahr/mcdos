@@ -61,3 +61,7 @@ DeleteLine = ctrl-d
 Delete = del
 WordLeft = ctrl-left
 WordRight = ctrl-right
+MarkToFileBegin = ctrl-shift-home
+MarkToFileEnd = ctrl-shift-end
+Top = ctrl-home
+Bottom = ctrl-end
