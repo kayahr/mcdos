@@ -28,9 +28,21 @@ How you configure your system to use mcedit, is up to you. I would recommend set
 
 ## Hotkeys
 
+The hotkey listings here are not complete lists. They primarily document the hotkeys which are different to the default key mapping of mcedit.
+
 ### Button Bar
 
-mcedit has a fixed button bar at the bottom which can't be configured and is not affected by the hotkey configuration. Function keys are configured differently in this setup so the mapping shown in the button bar now describes Shift-F1 to Shift-F10 instead of F1 to F10. *Help* can be opened by Shift+F1, not by F1. The menu can be opened with Shift+F9, but not by F9. And so on. In that way the button bar still makes sense (you only have to press Shift modifier), but F-keys without modifier are free for better key mappings.
+mcedit has a fixed button bar at the bottom which can't be configured and is not affected by the hotkey configuration. This configuration does not mess with function key mappings, so the button bar still makes sense and does not show wrong information. Currently this only has the downside that F3 can't be used for *Search Continue*.
+
+### Editor hotkeys
+
+Hotkey     | Command         | Function
+-----------|-----------------|-------------------------
+Tab        | BlockShiftRight | Indents marked lines
+Shift+Tab  | BlockShiftLeft  | Unindents marked lines
+Ctrl+D     | DeleteLine      | Delete current line
+Ctrl+Left  | WordLeft        | Move cursor one word to the left
+Ctrl+Right | WordTop         | Move cursor one word to the right
 
 
 ### File menu hotkeys
@@ -45,7 +57,7 @@ Ctrl+S     | Save File      | Save       |
 Ctrl+Alt+S | Save File As   | SaveAs     | Ctrl-Shift-S is not mappable unfortunately
 Ctrl+I     | Insert File    | InsertFile |
 Ctrl+T     | Copy To File   | BlockSave  | T for copy "To" file
-F1         | User Menu      | UserMenu   | Like the Command Palette in Visual Studio Code
+F12        | User Menu      | UserMenu   |
 Ctrl+Q     | Quit           | Quit       |
 
 ### Edit menu hotkeys
@@ -55,7 +67,7 @@ Hotkey      | Menu                 | Command         | Notes
 Ctrl+Z      | Undo                 | Undo            |
 Ctrl+Y      | Redo                 | Redo            |
 Insert      | Toggle ins/overwrite | InsertOverwrite |
-Alt+M       | Toggle Mark          | Mark            |
+F3          | Toggle Mark          | Mark            | Fixed mapping in button bar
 Alt+Shift+M | Mark Columns         | MarkColumn      |
 Ctrl+a      | Mark All             | MarkAll         |
 Escape      | Unmark               | Unmark          |
@@ -71,12 +83,12 @@ Ctrl+End    | End                  | Bottom          |
 Hotkey      | Menu                 | Command        | Notes
 ------------|----------------------|----------------|------------------
 Ctrl+F      | Search               | Search         |
-F3          | Search again         | SearchContinue |
+Ctrl+Alt+F  | Search again         | SearchContinue | F3 has fixed meaning in button bar
 Ctrl+R      | Replace              | Replace        | Ctrl+H is not mappable
-Ctrl+Alt+K  | Toggle Bookmark      | Bookmark
-Ctrl+Alt+L  | Next Bookmark        | BookmarkNext
-Ctrl+Alt+J  | Prev Bookmark        | BookmarkPrev
-Ctrl+Alt+I  | Flush Bookmark       | BookmarkFlush
+Ctrl+Alt+K  | Toggle Bookmark      | Bookmark       |
+Ctrl+Alt+L  | Next Bookmark        | BookmarkNext   |
+Ctrl+Alt+J  | Prev Bookmark        | BookmarkPrev   |
+Ctrl+Alt+I  | Flush Bookmark       | BookmarkFlush  |
 
 ### Command menu hotkeys
 
@@ -90,6 +102,23 @@ Alt+Enter   | Find Declaration           | Find                 | Needs emacs st
 Alt+Minus   | Back from declaration      | FilePrev             | Needs emacs style TAGS file to work
 Alt+Plus    | Forward to declaration     | FileNext             | Needs emacs style TAGS file to work
 Alt+R       | Start/Stop record macro    | MacroStartStopRecord |
+
+### Format menu hotkeys
+
+Hotkey      | Menu                       | Command              | Notes
+------------|----------------------------|----------------------|-----------------------------------------------------
+Ctrl+U      | Insert Literal             | InsertLiteral        | Related to Ctrl-Shift-U which is handled by Terminal
+Alt+P       | Format Paragraph           | ParagraphFormat      |
+Alt+T       | Sort                       | Sort                 |
+Alt+U       | Paste output of            | ExternalCommand      |
+
+### Window menu hotkeys
+
+Hotkey         | Menu                       | Command              | Notes
+---------------|----------------------------|----------------------|-----------------------------------------------------------
+Ctrl+Tab       | Next Window                | WindowNext           |
+Ctrl+Shift+W   | Window List                | WindowList           |
+
 
 [Midnight Commander]: https://midnight-commander.org/
 [MS-DOS Editor]: https://en.wikipedia.org/wiki/MS-DOS_Editor
